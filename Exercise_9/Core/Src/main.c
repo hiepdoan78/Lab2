@@ -178,7 +178,7 @@ int main(void)
 	  if(index_led_matrix >= MAX_LED_MATRIX){
 		  index_led_matrix = 0;
 	  }
-	  setTimer(25);
+	  setTimer(5);
   }
   }
   /* USER CODE END 3 */
@@ -238,7 +238,7 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 7999;
+  htim2.Init.Prescaler = 799;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 9;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

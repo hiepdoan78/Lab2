@@ -201,8 +201,8 @@ int main(void)
  8000220:	2300      	movs	r3, #0
  8000222:	617b      	str	r3, [r7, #20]
 	  }
-	  setTimer(25);
- 8000224:	2019      	movs	r0, #25
+	  setTimer(5);
+ 8000224:	2005      	movs	r0, #5
  8000226:	f000 f9e3 	bl	80005f0 <setTimer>
 	  if(timer_flag == 1){
  800022a:	e7e9      	b.n	8000200 <main+0x3c>
@@ -555,9 +555,9 @@ static void MX_TIM2_Init(void)
  80004a8:	4b1d      	ldr	r3, [pc, #116]	; (8000520 <MX_TIM2_Init+0x94>)
  80004aa:	f04f 4280 	mov.w	r2, #1073741824	; 0x40000000
  80004ae:	601a      	str	r2, [r3, #0]
-  htim2.Init.Prescaler = 7999;
+  htim2.Init.Prescaler = 799;
  80004b0:	4b1b      	ldr	r3, [pc, #108]	; (8000520 <MX_TIM2_Init+0x94>)
- 80004b2:	f641 723f 	movw	r2, #7999	; 0x1f3f
+ 80004b2:	f240 321f 	movw	r2, #799	; 0x31f
  80004b6:	605a      	str	r2, [r3, #4]
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
  80004b8:	4b19      	ldr	r3, [pc, #100]	; (8000520 <MX_TIM2_Init+0x94>)
